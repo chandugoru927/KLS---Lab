@@ -20,6 +20,7 @@ import { Tutorials } from './pages/app/Tutorials';
 import { Challenges } from './pages/app/Challenges';
 import { CircuitCanvas } from './pages/app/CircuitCanvas';
 import { Tinker3D } from './pages/app/Tinker3D';
+import { TinkerCircuits } from './pages/app/TinkerCircuits';
 import { AuthProvider } from './services/authService';
 
 export default function App() {
@@ -46,7 +47,7 @@ export default function App() {
             <Route path="classes" element={<Classes />} />
             <Route path="collections" element={<Collections />} />
             <Route path="tutorials" element={<Tutorials />} />
-            <Route path="circuits" element={<div className="p-8 text-slate-900">Circuits Workspace</div>} />
+            <Route path="circuits-workspace" element={<div className="p-8 text-slate-900">Circuits Workspace</div>} />
             <Route path="codeblocks" element={<div className="p-8">Codeblocks Editor</div>} />
             <Route path="challenges" element={<Challenges />} />
             <Route path="gallery" element={<div className="p-8 text-slate-900">Community Gallery</div>} />
@@ -82,6 +83,7 @@ export default function App() {
 
           <Route path="/app" element={<DashboardNavbarOnlyLayout />}>
             <Route path="3d-design" element={<Tinker3D />} />
+            <Route path="circuits" element={<TinkerCircuits />} />
           </Route>
 
           {/* Fallback */}
